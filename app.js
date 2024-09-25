@@ -136,6 +136,7 @@ function bookList(){
     }
 }
 
+// Sort Books Price Low to High Functionality
 document.addEventListener('DOMContentLoaded', function() {
     lowToHighButton.addEventListener('click', function(e){
         e.preventDefault();
@@ -147,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
+// Sort Books Price High to Low Functionality
 document.addEventListener('DOMContentLoaded', function() {
     highToLowButton.addEventListener('click', function(e){
         e.preventDefault();
@@ -158,6 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
+// Sort Books By Rating Functionality
 document.addEventListener('DOMContentLoaded', function() {
     rating.addEventListener('click', function(e){
         e.preventDefault();
@@ -169,8 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
-function main(){
 
+function main(){
     let timer = setTimeout(() => {
         bookList();
     }, 300)
